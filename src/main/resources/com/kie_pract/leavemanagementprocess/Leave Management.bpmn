@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_Bb-SUHavEe-MjN__0QtRJA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_ChristamasItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_New_Year_DayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Republic_DayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_DhulivandanItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_GudiPadwaItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Maharashtra_DayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Independence_DayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Ganesh_ChaturthiItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Anant_ChaturthiItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Gandhi_JayantiItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_DusseraItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Diwali_FirstDayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Diwali_SecondDayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Diwali_ThirdDayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_LeaveStartDateItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_CurrantDateItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_LeaveEndDateItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_PrefixHolidayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_SuffixHolidayItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="_MessageItem" structureRef="java.lang.Object"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputXItem" structureRef="java.lang.Object"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_New_Year_DayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Republic_DayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_DhulivandanInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_GudiPadwaInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Maharashtra_DayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Independence_DayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Ganesh_ChaturthiInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Anant_ChaturthiInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Gandhi_JayantiInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_DusseraInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_FirstDayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_SecondDayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_ThirdDayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_LeaveStartDateInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_CurrantDateInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_LeaveEndDateInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_PrefixHolidayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_SuffixHolidayInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptCharsetInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptHeaderInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_AuthTypeInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_AuthUrlInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ConnectTimeoutInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeCharsetInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_CookieInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_CookiePathInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_HandleResponseErrorsInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_HeadersInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_ReadTimeoutInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputXItem" structureRef="java.lang.Object"/>
+  <bpmn2:process id="LeaveManagementProcess.LeaveManagement" drools:packageName="com.kie_pract.leavemanagementprocess" drools:version="1.0" drools:adHoc="false" name="Leave Management" isExecutable="true" processType="Public">
+    <bpmn2:property id="Christamas" itemSubjectRef="_ChristamasItem" name="Christamas">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Christmas]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="New_Year_Day" itemSubjectRef="_New_Year_DayItem" name="New_Year_Day">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[New_Year_Day]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Republic_Day" itemSubjectRef="_Republic_DayItem" name="Republic_Day">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Republic_Day]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Dhulivandan" itemSubjectRef="_DhulivandanItem" name="Dhulivandan">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Dhulivandan]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="GudiPadwa" itemSubjectRef="_GudiPadwaItem" name="GudiPadwa">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[GudiPadwa]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Maharashtra_Day" itemSubjectRef="_Maharashtra_DayItem" name="Maharashtra_Day">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Maharashtra_Day]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Independence_Day" itemSubjectRef="_Independence_DayItem" name="Independence_Day">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Independence_Day]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Ganesh_Chaturthi" itemSubjectRef="_Ganesh_ChaturthiItem" name="Ganesh_Chaturthi">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Ganesh_Chaturthi]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Anant_Chaturthi" itemSubjectRef="_Anant_ChaturthiItem" name="Anant_Chaturthi">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Anant_Chaturthi]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Gandhi_Jayanti" itemSubjectRef="_Gandhi_JayantiItem" name="Gandhi_Jayanti">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Gandhi_Jayanti]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Dussera" itemSubjectRef="_DusseraItem" name="Dussera">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Dussera]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Diwali_FirstDay" itemSubjectRef="_Diwali_FirstDayItem" name="Diwali_FirstDay">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Diwali_FirstDay]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Diwali_SecondDay" itemSubjectRef="_Diwali_SecondDayItem" name="Diwali_SecondDay">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Diwali_SecondDay]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Diwali_ThirdDay" itemSubjectRef="_Diwali_ThirdDayItem" name="Diwali_ThirdDay">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Diwali_ThirdDay]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="LeaveStartDate" itemSubjectRef="_LeaveStartDateItem" name="LeaveStartDate">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[LeaveStartDate]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="CurrantDate" itemSubjectRef="_CurrantDateItem" name="CurrantDate">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[CurrantDate]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="LeaveEndDate" itemSubjectRef="_LeaveEndDateItem" name="LeaveEndDate">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[LeaveEndDate]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="PrefixHoliday" itemSubjectRef="_PrefixHolidayItem" name="PrefixHoliday">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[PrefixHoliday]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="SuffixHoliday" itemSubjectRef="_SuffixHolidayItem" name="SuffixHoliday">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[SuffixHoliday]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:property id="Message" itemSubjectRef="_MessageItem" name="Message">
+      <bpmn2:extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue><![CDATA[Message]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:property>
+    <bpmn2:sequenceFlow id="_1FC411B9-22DE-4E09-8091-62B8D5805F44" sourceRef="_5780C98A-D22B-44CD-AA88-94DBFD509A8A" targetRef="_0561B4DC-B677-4076-880B-C22235F15B2C">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_C3A490AC-87C3-46F5-8526-F2FE80024892" sourceRef="_0561B4DC-B677-4076-880B-C22235F15B2C" targetRef="_83BE7DA7-ECDD-406A-8980-D735EAB442B3">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:startEvent id="_5780C98A-D22B-44CD-AA88-94DBFD509A8A">
+      <bpmn2:outgoing>_1FC411B9-22DE-4E09-8091-62B8D5805F44</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_0561B4DC-B677-4076-880B-C22235F15B2C" drools:taskName="Rest" name="Rest">
+      <bpmn2:documentation id="_Bb-SUXavEe-MjN__0QtRJA"><![CDATA[jbpm-workitems-rest/index.html]]></bpmn2:documentation>
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Rest]]></drools:metaValue>
+        </drools:metaData>
+        <drools:onExit-script scriptFormat="http://www.java.com/java">
+          <drools:script><![CDATA[System.out.println("LM OP: "+Message);]]></drools:script>
+        </drools:onExit-script>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_1FC411B9-22DE-4E09-8091-62B8D5805F44</bpmn2:incoming>
+      <bpmn2:outgoing>_C3A490AC-87C3-46F5-8526-F2FE80024892</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_Bb-SUnavEe-MjN__0QtRJA">
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputXItem" name="Method"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputXItem" name="Password"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputX" drools:dtype="java.lang.Object" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputXItem" name="ResultClass"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputXItem" name="Url"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputXItem" name="Username"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputXItem" name="Christmas"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_New_Year_DayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_New_Year_DayInputXItem" name="New_Year_Day"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Republic_DayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Republic_DayInputXItem" name="Republic_Day"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_DhulivandanInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_DhulivandanInputXItem" name="Dhulivandan"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_GudiPadwaInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_GudiPadwaInputXItem" name="GudiPadwa"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Maharashtra_DayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Maharashtra_DayInputXItem" name="Maharashtra_Day"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Independence_DayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Independence_DayInputXItem" name="Independence_Day"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Ganesh_ChaturthiInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Ganesh_ChaturthiInputXItem" name="Ganesh_Chaturthi"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Anant_ChaturthiInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Anant_ChaturthiInputXItem" name="Anant_Chaturthi"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Gandhi_JayantiInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Gandhi_JayantiInputXItem" name="Gandhi_Jayanti"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_DusseraInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_DusseraInputXItem" name="Dussera"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_FirstDayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_FirstDayInputXItem" name="Diwali_FirstDay"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_SecondDayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_SecondDayInputXItem" name="Diwali_SecondDay"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_ThirdDayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_ThirdDayInputXItem" name="Diwali_ThirdDay"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveStartDateInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_LeaveStartDateInputXItem" name="LeaveStartDate"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_CurrantDateInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_CurrantDateInputXItem" name="CurrantDate"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveEndDateInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_LeaveEndDateInputXItem" name="LeaveEndDate"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_PrefixHolidayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_PrefixHolidayInputXItem" name="PrefixHoliday"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_SuffixHolidayInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_SuffixHolidayInputXItem" name="SuffixHoliday"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputXItem" name="ContentData"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputXItem" name="ContentType"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptInputXItem" name="Accept"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptCharsetInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptCharsetInputXItem" name="AcceptCharset"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptHeaderInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_AcceptHeaderInputXItem" name="AcceptHeader"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_AuthTypeInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_AuthTypeInputXItem" name="AuthType"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_AuthUrlInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_AuthUrlInputXItem" name="AuthUrl"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ConnectTimeoutInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ConnectTimeoutInputXItem" name="ConnectTimeout"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeCharsetInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeCharsetInputXItem" name="ContentTypeCharset"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_CookieInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_CookieInputXItem" name="Cookie"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_CookiePathInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_CookiePathInputXItem" name="CookiePath"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_HandleResponseErrorsInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_HandleResponseErrorsInputXItem" name="HandleResponseErrors"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_HeadersInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_HeadersInputXItem" name="Headers"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_ReadTimeoutInputX" drools:dtype="String" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_ReadTimeoutInputXItem" name="ReadTimeout"/>
+        <bpmn2:dataInput id="_0561B4DC-B677-4076-880B-C22235F15B2C_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:dataOutput id="_0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputXItem" name="Message"/>
+        <bpmn2:inputSet id="_Bb-SU3avEe-MjN__0QtRJA">
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_New_Year_DayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Republic_DayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_DhulivandanInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_GudiPadwaInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Maharashtra_DayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Independence_DayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Ganesh_ChaturthiInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Anant_ChaturthiInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Gandhi_JayantiInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_DusseraInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_FirstDayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_SecondDayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_ThirdDayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveStartDateInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_CurrantDateInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveEndDateInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_PrefixHolidayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_SuffixHolidayInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptCharsetInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_AcceptHeaderInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_AuthTypeInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_AuthUrlInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ConnectTimeoutInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeCharsetInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_CookieInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_CookiePathInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_HandleResponseErrorsInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_HeadersInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_ReadTimeoutInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_Bb-SVHavEe-MjN__0QtRJA">
+          <bpmn2:dataOutputRefs>_0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_Bb-SVXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SVnavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SV3avEe-MjN__0QtRJA"><![CDATA[POST]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SWHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_MethodInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SWXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SWnavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SW3avEe-MjN__0QtRJA"><![CDATA[demo]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SXHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_PasswordInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SXXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SXnavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SX3avEe-MjN__0QtRJA"><![CDATA[Message]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SYHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_ResultClassInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SYXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SYnavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SY3avEe-MjN__0QtRJA"><![CDATA[http://140.238.244.160:8080/engine-rest/decision-definition/key/Leave_Management/evaluate]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SZHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_UrlInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SZXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SZnavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SZ3avEe-MjN__0QtRJA"><![CDATA[demo]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SaHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_UsernameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SaXavEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SanavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-Sa3avEe-MjN__0QtRJA"><![CDATA[Christmas]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SbHavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_ChristmasInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SbXavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>New_Year_Day</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_New_Year_DayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SbnavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Republic_Day</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Republic_DayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sb3avEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Dhulivandan</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_DhulivandanInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-ScHavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>GudiPadwa</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_GudiPadwaInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-ScXavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Maharashtra_Day</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Maharashtra_DayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-ScnavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Independence_Day</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Independence_DayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sc3avEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Ganesh_Chaturthi</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Ganesh_ChaturthiInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SdHavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Anant_Chaturthi</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Anant_ChaturthiInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SdXavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Gandhi_Jayanti</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Gandhi_JayantiInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SdnavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Dussera</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_DusseraInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sd3avEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Diwali_FirstDay</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_FirstDayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SeHavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Diwali_SecondDay</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_SecondDayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SeXavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>Diwali_ThirdDay</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_Diwali_ThirdDayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SenavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>LeaveStartDate</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveStartDateInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Se3avEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>CurrantDate</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_CurrantDateInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SfHavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>LeaveEndDate</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_LeaveEndDateInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SfXavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>PrefixHoliday</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_PrefixHolidayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-SfnavEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>SuffixHoliday</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_SuffixHolidayInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sf3avEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SgHavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SgXavEe-MjN__0QtRJA"><![CDATA[{     "variables": {              "Christmas": {             "type": "string",             "value": "#{Christmas}"         },          "New_Year_Day": {             "type": "string",             "value":  "#{New_Year_Day}"         },          "Republic_Day": {             "type": "string",             "value": "#{Republic_Day}"         },          "Dhulivandan": {             "type": "string",             "value": "#{Dhulivandan}"         },          "GudiPadwa": {             "type": "string",             "value": "#{GudiPadwa}"         },          "Maharashtra_Day": {             "type": "string",             "value": "#{Maharashtra_Day}"         },          "Independence_Day": {             "type": "string",             "value": "#{Independence_Day}"         },          "Ganesh_Chaturthi": {             "type": "string",             "value": "#{Ganesh_Chaturthi}"         },          "Anant_Chaturthi": {             "type": "string",             "value":"#{Anant_Chaturthi}"         },          "Gandhi_Jayanti": {             "type": "string",             "value": "#{Gandhi_Jayanti}"         },          "Dussera": {             "type": "string",             "value": "#{Dussera}"         },          "Diwali_FirstDay": {             "type": "string",             "value":  "#{Diwali_FirstDay}"         },          "Diwali_SecondDay": {             "type": "string",             "value":"#{Diwali_SecondDay}"         },          "Diwali_ThirdDay": {             "type": "string",             "value":"#{Diwali_ThirdDay}"         },        "LeaveStartDate": {             "type": "string",             "value": "#{LeaveStartDate}"         },          "CurrantDate": {             "type": "string",             "value": "#{CurrantDate}"         },          "LeaveEndDate": {             "type": "string",             "value": "#{LeaveEndDate}"         },          "PrefixHoliday": {             "type": "string",             "value":"#{PrefixHoliday}"         },          "SuffixHoliday": {             "type": "string",             "value":"#{SuffixHoliday}"         }     }      }]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SgnavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_ContentDataInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sg3avEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-ShHavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-ShXavEe-MjN__0QtRJA"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-ShnavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_ContentTypeInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_Bb-Sh3avEe-MjN__0QtRJA">
+        <bpmn2:targetRef>_0561B4DC-B677-4076-880B-C22235F15B2C_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_Bb-SiHavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SiXavEe-MjN__0QtRJA"><![CDATA[Rest]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SinavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_TaskNameInputX</bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_Bb-Si3avEe-MjN__0QtRJA">
+        <bpmn2:sourceRef>_0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputX</bpmn2:sourceRef>
+        <bpmn2:assignment id="_Bb-SjHavEe-MjN__0QtRJA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Bb-SjXavEe-MjN__0QtRJA">_0561B4DC-B677-4076-880B-C22235F15B2C_MessageOutputX</bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Bb-SjnavEe-MjN__0QtRJA"><![CDATA[Message]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:task>
+    <bpmn2:endEvent id="_83BE7DA7-ECDD-406A-8980-D735EAB442B3">
+      <bpmn2:incoming>_C3A490AC-87C3-46F5-8526-F2FE80024892</bpmn2:incoming>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_Bb-Sj3avEe-MjN__0QtRJA">
+    <bpmndi:BPMNPlane id="_Bb-SkHavEe-MjN__0QtRJA" bpmnElement="LeaveManagementProcess.LeaveManagement">
+      <bpmndi:BPMNShape id="shape__83BE7DA7-ECDD-406A-8980-D735EAB442B3" bpmnElement="_83BE7DA7-ECDD-406A-8980-D735EAB442B3">
+        <dc:Bounds height="56.0" width="56.0" x="555.0" y="170.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__0561B4DC-B677-4076-880B-C22235F15B2C" bpmnElement="_0561B4DC-B677-4076-880B-C22235F15B2C">
+        <dc:Bounds height="102.0" width="154.0" x="321.0" y="147.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__5780C98A-D22B-44CD-AA88-94DBFD509A8A" bpmnElement="_5780C98A-D22B-44CD-AA88-94DBFD509A8A">
+        <dc:Bounds height="56.0" width="56.0" x="202.0" y="170.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__0561B4DC-B677-4076-880B-C22235F15B2C_to_shape__83BE7DA7-ECDD-406A-8980-D735EAB442B3" bpmnElement="_C3A490AC-87C3-46F5-8526-F2FE80024892">
+        <di:waypoint xsi:type="dc:Point" x="475.0" y="198.0"/>
+        <di:waypoint xsi:type="dc:Point" x="555.0" y="198.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__5780C98A-D22B-44CD-AA88-94DBFD509A8A_to_shape__0561B4DC-B677-4076-880B-C22235F15B2C" bpmnElement="_1FC411B9-22DE-4E09-8091-62B8D5805F44">
+        <di:waypoint xsi:type="dc:Point" x="230.0" y="198.0"/>
+        <di:waypoint xsi:type="dc:Point" x="321.0" y="198.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_Bb-SkXavEe-MjN__0QtRJA" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_0561B4DC-B677-4076-880B-C22235F15B2C" id="_Bb-SknavEe-MjN__0QtRJA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5780C98A-D22B-44CD-AA88-94DBFD509A8A" id="_Bb-Sk3avEe-MjN__0QtRJA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_Bb-SUHavEe-MjN__0QtRJA</bpmn2:source>
+    <bpmn2:target>_Bb-SUHavEe-MjN__0QtRJA</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>
